@@ -1,0 +1,6 @@
+[submodule "SmartAccess"]
+	path = SmartAccess
+	url = https://github.com/yadariya/SmartAccess
+[submodule "smart-access-frontend"]
+	path = smart-access-frontend
+	url = https://github.com/glebosotov/smart-access-frontend
