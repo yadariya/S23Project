@@ -20,9 +20,10 @@ ENV PYTHONFAULTHANDLER=1 \
 
 RUN pip install --upgrade pip setuptools wheel
 RUN pip install poetry
-RUN pip install m2crypto==0.38.0 --no-use-pep517
 
 RUN apt-get update && apt-get install -y swig zbar-tools
+
+RUN pip install m2crypto==0.38.0 --no-use-pep517
 
 WORKDIR /app
 COPY ./SmartAccess/poetry.lock ./SmartAccess/pyproject.toml ./
